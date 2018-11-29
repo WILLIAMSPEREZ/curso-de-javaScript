@@ -1,16 +1,12 @@
 
-//var compañeros = ["Acopa", "Joaquin", "Antonio", "Ricardo", "Luisa"];
 
-//document.write(compañeros[0]);
-
-
-var aryPersonas =[
+var aryPersonas =[	
 {
 
 	nombre: "Jose",
 	apellido: "Acopa",
 	Profesion: "Sistema Computacionales",
-	Edad: 25,
+	edad: 25,
 },
 
 {
@@ -33,13 +29,24 @@ var aryPersonas =[
 },
 {
 	nombre:"Luisa",
-	apellido: "Garcia",
+    apellido: "Garcia",
 	Profesion: "Desarrollador de Software",
+	edad: 21,
+},
+{
+	nombre:"Williams",
+	apellido:"Perez",
+	Profesion:"Desarrollador de Software",
 	edad: 21,
 }
 ]
+ 
 
-for (var i = 0; i < aryPersonas.length; i++) {
-	document.write(aryPersonas[i].nombre);
-	
+function rellenar_tabla() {
+
+	var datos = ''
+    for (var i = 0; i < aryPersonas.length; i++) {
+	  	datos = datos + "<tr><td>"+ aryPersonas[i].nombre+aryPersonas[i].apellido+"</td><td>"+aryPersonas[i].edad+"</td><td>"+aryPersonas[i].Profesion+"</td></tr>"     
+	 }
+    document.getElementById("datos").innerHTML = datos;
 }
