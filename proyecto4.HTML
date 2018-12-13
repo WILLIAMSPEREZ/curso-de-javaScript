@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+<input type="number" name="anio" id="valorInput" onkeypress="return soloNumeros(event);"  maxlength="4"  oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+
+	<button onclick="calcular()">calcular</button>
+<br>
+
+ <table>
+    <thead>
+      <tr>
+         <th>Anio</th>
+        <th>Edad</th>
+      </tr>
+    </thead>
+     	<tbody id="datos">
+
+     </tbody>
+ </table>
+
+
+
+
+<label id="2018"></label>
+  <script src="proyecto4.js"></script>
+</body>
+</html>
